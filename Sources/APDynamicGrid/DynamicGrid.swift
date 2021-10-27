@@ -1,7 +1,5 @@
 import SwiftUI
-/**
- Hi I am the title
- */
+
 public struct DynamicGrid<T : Identifiable & Hashable, Content: View> : View {
 	
 	@Binding var data : [T]
@@ -12,18 +10,12 @@ public struct DynamicGrid<T : Identifiable & Hashable, Content: View> : View {
 	@State private var map : [Int : [T]] = [:]
 	@Namespace private var dynamicGridAnimation
 	
-		/// Description
-		/// - Parameters:
-		///   - columns: columns description
-		///   - data: data description
-		///   - content: content description
 	public init(columns: Binding<Int> = .constant(2), data : Binding<[T]>, @ViewBuilder content: @escaping (T) -> Content) {
 		self.content = content
 		_data = data
 		_columns = columns
 	}
 	
-		/// Description
 	public var body : some View {
 		LazyVStack {
 			ForEach(map.keys.sorted(), id:\.self) {i in
@@ -47,7 +39,6 @@ public struct DynamicGrid<T : Identifiable & Hashable, Content: View> : View {
 		}
 		
 	}
-	
 	
 	private func populateMap() {
 		map = [:]
