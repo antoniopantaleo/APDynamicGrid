@@ -1,5 +1,7 @@
 # APDynamicGrid
 
+[![License Badge](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE.txt) ![iOS Version Badge](https://img.shields.io/badge/iOS-14.0-informational?style=flat-square&logo=apple&logoColor=white) ![iPadOS Version Badge](https://img.shields.io/badge/iPadOS-14.0-informational?style=flat-square&logo=apple&logoColor=white) ![Swift Version Badge](https://img.shields.io/badge/Swift-5.5-orange?style=flat-square&logo=swift&logoColor=white)
+
 ![Package Presentation Image](Assets/APDynamicGrid.png)
 
 ## Overview 
