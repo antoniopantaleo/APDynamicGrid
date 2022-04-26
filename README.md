@@ -36,23 +36,23 @@ var body : some View {
   }
 }
 ```
-Entries can be animated registering a `@Namespace` with the unique `id`
+Entries can be animated registering a `@Namespace` using their unique `id`
 
 ```swift
 var body : some View {
   
   private @State var entries : [Entry]
   private @State var columns : Int
-  // add a namespace
+  // 1. add a namespace
   private @Namespace var namespace
   
   ScrollView {
     DynamicGrid(columns: $columns, data: $entries) { entry in 
       MyCustomCell(entry: entry)
-      // register the namespace
+      // 2. register the namespace
       .matchedGeometryEffect(id: entry.id, in: namespace)
     }
-    // apply animations
+    // 3. apply animations
     .animation(.default)
   }
 }
