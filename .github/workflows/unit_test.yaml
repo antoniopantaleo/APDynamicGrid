@@ -1,0 +1,17 @@
+name: Unit Tests
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  run_tests:
+    runs-on: macos-11
+    name: UnitTest iOS
+    steps:
+    - uses: actions/checkout@v1
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
+    - name: Run unit tests
+      run: xcodebuild -scheme APDynamicGrid -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.2' test | xcpretty && exit ${PIPESTATUS[0]}
