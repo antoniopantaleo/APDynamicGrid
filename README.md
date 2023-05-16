@@ -10,9 +10,11 @@
 
 ## Overview 
 
-<img src="Assets/demo.gif" align="right" width="300"/>
-
 `APDynamicGrid` is a SwiftUI package that helps you create consistent and animatable grids. The `DynamicGrid` View preserves the same width, adjusting the last elements consistently.
+
+## Demo
+
+<img src="Assets/demo.gif" width="300"/>
 
 ## Usage
 
