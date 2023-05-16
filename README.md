@@ -1,6 +1,10 @@
 # APDynamicGrid
 
-[![License Badge](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE.txt) ![iOS Version Badge](https://img.shields.io/badge/iOS-14.0+-informational?style=flat-square&logo=apple&logoColor=white) ![iPadOS Version Badge](https://img.shields.io/badge/iPadOS-14.0+-informational?style=flat-square&logo=apple&logoColor=white) ![Swift Version Badge](https://img.shields.io/badge/Swift-5.5+-orange?style=flat-square&logo=swift&logoColor=white)
+[![License Badge](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE.txt)
+![iOS Version Badge](https://img.shields.io/badge/iOS-14.0+-informational?style=flat-square&logo=apple&logoColor=white)
+![iPadOS Version Badge](https://img.shields.io/badge/iPadOS-14.0+-informational?style=flat-square&logo=apple&logoColor=white)
+![Swift Version Badge](https://img.shields.io/badge/Swift-5.5+-orange?style=flat-square&logo=swift&logoColor=white)
+[![](https://img.shields.io/github/actions/workflow/status/antoniopantaleo/APDynamicGrid/unit_test.yaml?branch=master&label=test&style=flat-square&logo=github)](https://github.com/antoniopantaleo/APDynamicGrid/actions/workflows/unit_test.yaml)
 
 ![AP](https://user-images.githubusercontent.com/46167308/236639670-28b7423d-6d84-4c59-90b3-e5527e84f3a8.png)
 
